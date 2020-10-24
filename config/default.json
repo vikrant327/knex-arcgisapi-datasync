@@ -1,0 +1,30 @@
+{
+
+    "projectsStatus24Hours":{
+       "tableName":"database_table_name",
+       "timeUnit":null,
+       "timeAmount":null
+    },
+    "projectsDatafi":{
+      "tableNameMain":"dbo.database_name"
+   },
+    "arcgis":{
+      "url":"arcgis server url",
+      "username":"susername",
+      "password":"&password",
+      "tokenExpires":60
+    },
+    "featureLayer":{
+      "url":"arcgis feature service url",
+      "layerId":"layer id to be edited",
+      "layerTitle":"layer name"
+    },
+    "db":{
+      "host" : "db host",
+      "server":"server",
+      "user" : "db user name",
+      "password" : "password",
+      "database" : "database name"
+    }
+
+}

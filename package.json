@@ -1,0 +1,37 @@
+{
+  "name": "wsb-project-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js",
+    "predeploy": "git checkout dist && git merge master",
+    "deploy": "npm run build && git add build && git commit -m \"Update build\"",
+    "postdeploy": "git push && git checkout master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@esri/arcgis-rest-auth": "^2.2.1",
+    "@esri/arcgis-rest-feature-layer": "^2.2.1",
+    "@esri/arcgis-rest-request": "^2.2.1",
+    "config": "^3.2.4",
+    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-form-data": "^2.0.0",
+    "knex": "^0.19.1",
+    "mssql": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
